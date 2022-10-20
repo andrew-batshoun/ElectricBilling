@@ -15,12 +15,12 @@ public class About extends JFrame implements ActionListener {
 
     public About(){
         setLayout(null);
-        JButton b1 = new JButton("Exit");
+        b1 = new JButton("Exit");
         add(b1);
         b1.setBounds(180, 430, 120, 20);
         b1.addActionListener(this);
 
-        Font f = new Font("RALEWAY", Font.BOLD, 180);
+         f = new Font("RALEWAY", Font.BOLD, 180);
         setFont(f);
 
         s= "                               About Project                \n   "
@@ -28,23 +28,23 @@ public class About extends JFrame implements ActionListener {
                 +"This is a concept for computerizing a billing System focused on the \n"
                 +"calculations of units consumed in a during a specified time.\n\n";
 
-        TextArea t1 = new TextArea(s, 5, 20, Scrollbar.VERTICAL);
+        t1 = new TextArea(s, 5, 20, Scrollbar.VERTICAL);
         t1.setEditable(true);
         t1.setBounds(20, 100, 450, 300);
 
         add(t1);
 
-        Font f1 = new Font("RALEWAY", Font.BOLD, 16);
+        f1 = new Font("RALEWAY", Font.BOLD, 16);
 
         Container contentPane = this.getContentPane();
         t1 = new TextArea();
 
-        JLabel l1 = new JLabel("About Project");
+         l1 = new JLabel("About Project");
         add(l1);
         l1.setBounds(170, 10, 180, 80);
         l1.setForeground(Color.red);
 
-        Font f2 = new Font("RALEWAY", Font.BOLD, 20);
+        f2 = new Font("RALEWAY", Font.BOLD, 20);
         l1.setFont(f2);
 
         setBounds(700, 220, 500, 550);
